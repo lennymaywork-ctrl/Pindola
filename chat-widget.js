@@ -8,15 +8,18 @@
         </div>
         <div id="ai-chat-window" class="chat-window hidden">
             <div class="chat-header">
-                <h3>AI Receptionist</h3>
+                <h3>AI Receptionist (Automated Assistant)</h3>
                 <button id="close-chat">&times;</button>
             </div>
             <div id="chat-messages" class="chat-messages">
-                <div class="message bot">Hello! I'm your AI assistant. How can I help you today?</div>
+                <div class="message bot">Hello! I am an AI-powered assistant trained to help you with Pindola AI Agency bookings and FAQs. I am not a human host. How can I help you today?</div>
             </div>
             <div class="chat-input-area">
                 <input type="text" id="chat-input" placeholder="Type a message...">
                 <button id="send-chat">Send</button>
+            </div>
+            <div class="chat-disclaimer">
+                Powered by Pindola AI. This is an automated virtual assistant. Chats are processed by AI. Please do not input sensitive personal data.
             </div>
         </div>
     `;
@@ -129,6 +132,15 @@
             padding: 8px 15px;
             border-radius: 20px;
             cursor: pointer;
+        }
+        .chat-disclaimer {
+            font-size: 0.7rem;
+            color: #999;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            border-top: 1px solid #eee;
+            text-align: center;
+            line-height: 1.2;
         }
     `;
 

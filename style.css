@@ -428,3 +428,70 @@ footer {
     margin-top: 16px;
     font-style: italic;
 }
+
+/* Legal & Compliance Styles */
+.b2b-disclaimer {
+    font-size: 0.9rem;
+    color: #b91c1c; /* Same as founders note red */
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.legal-content {
+    margin-bottom: 60px;
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+.legal-content h3 {
+    color: var(--dark);
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.legal-content p {
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.b2b-footer {
+    font-size: 0.8rem;
+    color: var(--secondary);
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .footer-links {
+        justify-content: center;
+    }
+}
