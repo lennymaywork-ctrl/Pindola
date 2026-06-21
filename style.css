@@ -400,3 +400,31 @@ footer {
     .hero { padding: 60px 0; }
     .steps { grid-template-columns: 1fr; }
 }
+
+/* Founders Offer Styles */
+.strike {
+    text-decoration: line-through;
+    color: var(--secondary);
+    opacity: 0.6;
+}
+
+.future-prices {
+    font-size: 0.9rem;
+    margin-top: -16px;
+    margin-bottom: 24px;
+    color: var(--secondary);
+}
+
+.founders-note {
+    font-size: 0.85rem;
+    color: #b91c1c; /* Urgent red */
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+.price-increase-note {
+    font-size: 0.75rem;
+    color: var(--secondary);
+    margin-top: 16px;
+    font-style: italic;
+}
