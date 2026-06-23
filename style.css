@@ -403,6 +403,7 @@ section {
 .demo-img.burma-superstar { background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80'); }
 .demo-img.zuni-cafe { background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80'); }
 .demo-img.dragon-beaux { background-image: url('https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80'); }
+.demo-img.swan-oyster { background-image: url('https://images.unsplash.com/photo-1551248429-42435c474b2a?auto=format&fit=crop&w=800&q=80'); }
 
 .demo-info {
     padding: 24px;
@@ -511,7 +512,53 @@ footer {
     font-style: italic;
 }
 
-/* Legal & Compliance Styles */
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1, .hero-content p, .hero-btns, .hero-trust {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-content p { animation-delay: 0.1s; }
+.hero-btns { animation-delay: 0.2s; }
+.hero-trust { animation-delay: 0.3s; }
+
+.pricing-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.demo-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.step-num {
+    transition: transform 0.3s ease;
+}
+
+.step:hover .step-num {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.about-card {
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background: rgba(30, 41, 59, 0.3);
+}
+
+.about-card:hover {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: var(--primary);
+    transform: translateY(-5px);
+}
 .b2b-disclaimer {
     font-size: 0.95rem;
     color: #fb7185;
